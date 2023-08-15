@@ -35,21 +35,25 @@
             <a href="ForumEN.html" class="TBR-items">
                 <div>English</div>
             </a>
-            <a href="#forum" class="TBR-items">
-                <div>論壇介紹</div>
-            </a>
-            <a href="#VIP" class="TBR-items">
-                <div>貴賓介紹</div>
-            </a>
-            <a href="#talker" class="TBR-items">
-                <div>講者介紹</div>
-            </a>
-            <a href="#agenda" class="TBR-items">
-                <div>活動議程</div>
-            </a>
-            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
-                <div>聯絡我們</div>
-            </a>
+            <!-- 下拉選單觸發器 -->
+            <div class="dropdown-trigger">選單</div>
+            <div class="dropdown-menu">
+                <a href="#forum" class="TBR-items">
+                    <div>論壇介紹</div>
+                </a>
+                <a href="#VIP" class="TBR-items">
+                    <div>貴賓介紹</div>
+                </a>
+                <a href="#talker" class="TBR-items">
+                    <div>講者介紹</div>
+                </a>
+                <a href="#agenda" class="TBR-items">
+                    <div>活動議程</div>
+                </a>
+                <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
+                    <div>聯絡我們</div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="topboard-coverd"></div>
@@ -322,6 +326,12 @@
         }
     });
     });
+
+    /*禁止手機用戶左右活動*/
+    document.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+
 
 
 </script>

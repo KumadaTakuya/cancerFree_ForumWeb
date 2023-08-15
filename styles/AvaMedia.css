@@ -1,4 +1,13 @@
 @media (max-width: 768px){
+    html,
+    body,
+    div,
+    img:lang(en) {
+        margin: -0.5px;
+        padding: 0px;
+        font-family: 'Kanit', sans-serif;
+    }
+
     .topboard-left{
         width: 35%;
     }
@@ -14,13 +23,48 @@
     .topboard-right{
         width: 65%;
     }
+    /* ============================================= .dropdown-menu ================================= */
+    /* 初始隱藏下拉選單觸發器 */
+    .dropdown-trigger {
+        width: 100%;
+        height: 50%;
+        padding-right: 10vw;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        color: #ffffff;
+    }
+    .dropdown-menu{
+        display: block;
+        width: 40vw;
+        margin-right: -15vw;
+    }
+    /* 隱藏下拉選單 */
+    .dropdown-menu .TBR-items{
+        display: none;
+        background-color: #6097BE;
+        
+        width: 100%;
+
+        
+    }
+
+    /* 顯示下拉選單，當觸發器被點擊或懸停 */
+    .dropdown-trigger:hover + .dropdown-menu .TBR-items, 
+    .dropdown-trigger:focus + .dropdown-menu .TBR-items {
+        display: block;
+    }
 
     .TBR-items {
-        font-size: 2.5vw;
+        font-size: 4vw;
+        width: 35%;
     }
 
     .TBR-items-NULL {
         font-size: 2.5vw;
+        width: 10%;
     }
 
     .session_title {
@@ -77,6 +121,12 @@
     }
 
     /*============================ faq =================================*/
+    /* 伸縮FAQ */
+    .faq-item{
+        margin-left: -5vw;
+        width: 95vw;
+        display: flex;
+    }
     .faq-item ul {
         width: 80%; 
     }
@@ -108,9 +158,10 @@
     /*================================= img ======================================*/
     .portal{
         height: 60vw;;
-        flex-direction: column;
-
         margin-top: 10vw;
+
+        flex-direction: column;
+        align-items: center;
     }
 
     .portal-left{
@@ -185,5 +236,13 @@
     
         display: flex;
         align-items: center;
+    }
+
+    .go-top {
+        right: 12vw;
+    }
+    
+    .dogicon {
+        right: 10vw;
     }
 }

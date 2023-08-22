@@ -232,12 +232,14 @@ body {
     font-weight: 600;
     font-size: 1.6vw;
     text-align: left;
-    letter-spacing: 0.3vw;
-    line-height: 1.0;
+    /* letter-spacing: 0.3vw;
+    line-height: 1.0; */
 }
 
 .IM_contant p {
     margin-left: 1.5vw;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /*================================= vip ======================================*/
@@ -333,7 +335,7 @@ body {
     align-items: center; 
     margin-top: 3vw;
     width: 100%;
-    height: 65vw;
+    height: 100vw;
 
     /* justify-content: center; */
 }
@@ -434,6 +436,26 @@ body {
     height: auto;
 }
 
+.agenda {
+    /* background-color: #000; */
+    width: 80vw;
+    /* height: 100vw; */
+
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.agenda img{
+    /* background-color: #fff; */
+
+    width: 80vw;
+    height: auto;
+}
+
 .organizer {
     /* background-color: #000; */
     width: 80vw;
@@ -450,7 +472,7 @@ body {
 .organizer img{
     /* background-color: #fff; */
 
-    width: 60vw;
+    width: 80vw;
     height: auto;
 }
 
@@ -519,7 +541,7 @@ body {
 }
 
 .phone{
-    width: 40%;
+    width: 35%;
     height: 100%;
 
     font-size: 2vw;
@@ -531,10 +553,10 @@ body {
 
 
 .address{
-    width: 60%;
+    width: 65%;
     height: 100%;
 
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: #ffffff;
 
     display: flex;
